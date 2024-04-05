@@ -1,0 +1,31 @@
+.footer {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #cbaf9d;
+  color: black;
+  padding: 2vw 0; /* Use viewport width for padding */
+}
+
+.container {
+  width: 95%; /* Use percentage for container width */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2%; /* Use percentage for padding */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer-section {
+  width: 45%; /* Adjust width for responsiveness */
+  margin-bottom: 2vw; /* Use viewport width for margin */
+}
+
+.footer-section h3 {
+  font-size: 1.5vw; /* Use viewport width for font size */
+  margin-bottom: 1vw; /* Use viewport width for margin */
+}
+
+.footer-section p {
+  font-size: 1.2vw; /* Use viewport width for font size */
+  line-height: 1.6;
+}

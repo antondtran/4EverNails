@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/services.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+
+    <script>
+      // Fetch the navbar.html content
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          // Insert the navbar.html content into the placeholder
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        })
+        .catch((error) => console.error("Error fetching navbar:", error));
+    </script>
+
+    <header class="header">
+      <h1>Nail Services</h1>
+    </header>
+    <div class="services-container">
+      <ul class="services-list">
+        <li class="service-item">
+          <div class="service-title">Manicure</div>
+          <!-- <div class="service-description"></div> -->
+        </li>
+        <li class="service-item">
+          <div class="service-title">Pedicure</div>
+        </li>
+        <li class="service-item">
+          <div class="service-title">Manicure & Pedicure</div>
+        </li>
+        <li class="service-item">
+          <div class="service-title">Acrylic Nails</div>
+        </li>
+        <li class="service-item">
+          <div class="service-title">Gel Nails</div>
+        </li>
+        <li class="service-item">
+          <div class="service-title">Nail Extensions</div>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <footer>
+    <script src="/js/footer.js"></script>
+  </footer>
+</html>
